@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: rgb(245, 245, 245);
+      }
+      h1 {
+        display: flex;
+        justify-content: center;
+        top: 5px;
+      }
+      .container {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+      }
+      .box {
+        position: relative;
+      }
+      .container:nth-child(1) .box:nth-child(1) {
+        width: 20%;
+        height: 90%;
+        margin: 10px;
+        background-color: tomato;
+        border: 3px solid white;
+      }
+      .container:nth-child(1) .box:nth-child(2) {
+        width: 20%;
+        height: 90%;
+        margin: 10px;
+        background-color: teal;
+        border: 3px solid white;
+      }
+
+      .container:nth-child(2) .box:nth-child(1) {
+        width: 20%;
+        height: 90%;
+        margin: 10px;
+        background-color: #deb887;
+        border: 3px solid white;
+      }
+      .container:nth-child(2) .box:nth-child(2) {
+        width: 20%;
+        height: 90%;
+        margin: 10px;
+        background-color: #d7bfd7;
+        border: 3px solid white;
+      }
+
+      .content {
+        position: absolute;
+        top: 25px;
+        width: 100%;
+        height: 100px;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="content">
+          <h3>Tomato</h3>
+          <h4>#FF6347</h4>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Teal</h3>
+          <h4>#008080</h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="content">
+          <h3>Burlywood</h3>
+          <h4>#DEB887</h4>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content">
+          <h3>Thistle</h3>
+          <h4>#D7BFD7</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

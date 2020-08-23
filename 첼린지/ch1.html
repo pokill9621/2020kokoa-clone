@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>repl.it</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="firstName">First Name</label>
+        <input type="text" required id="firstName" placeholder="First Name" />
+      </div>
+      <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" required id="lastName" placeholder="Last name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" required id="email" placeholder="email" />
+      </div>
+      <div>
+        <label for="userName">Username</label>
+        <input type="text" required placeholder="Username" />
+      </div>
+      <div>
+        <label for="passwords">Password</label>
+        <input
+          type="password"
+          id="passwords"
+          required
+          minlength="10"
+          placeholder="password"
+        />
+      </div>
+      <div>
+        <label for="birthDate">Brith Date</label>
+        <input type="date" required />
+      </div>
+      <div>
+        <label for="line">How happy are you?</label>
+        <input type="range" required list="kimchi-levels" />
+        <datalist id="kimchi-levels">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+      </div>
+      <div>
+        <label for="colors">What is your fav.color</label>
+        <input type="color" id="colors" required />
+      </div>
+      <div>
+        <label for="submit"></label>
+        <input type="submit" required id="submit" value="Create Account" />
+      </div>
+    </form>
+  </body>
+</html>

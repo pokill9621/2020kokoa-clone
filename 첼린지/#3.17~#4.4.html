@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background-color: #6bbcbe;
+        width: 60%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .ball-container {
+        width: 20%;
+        height: 20%;
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: rotate_ball 1s linear infinite;
+      }
+
+      .ball {
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        border-radius: 50%;
+      }
+      @keyframes rotate_ball {
+        0%,
+        30% {
+          transform: rotate(0deg);
+        }
+        80%,
+        100% {
+          transform: rotate(180deg);
+        }
+      }
+      .stick-container {
+        width: 20%;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+      }
+      .stick {
+        width: 10px;
+        height: 80px;
+        background-color: white;
+        animation: scale-stick 1s linear infinite;
+      }
+      .stick:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .stick:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .stick:nth-child(4) {
+        animation-delay: 0.3s;
+      }
+      .stick:nth-child(5) {
+        animation-delay: 0.4s;
+      }
+      @keyframes scale-stick {
+        0%,
+        30% {
+          transform: scaleY(1);
+        }
+        50%,
+        60% {
+          transform: scaleY(2);
+        }
+        90%,
+        100% {
+          transform: scaleY(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ball-container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+      </div>
+      <div class="stick-container">
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+      </div>
+    </div>
+  </body>
+</html>
